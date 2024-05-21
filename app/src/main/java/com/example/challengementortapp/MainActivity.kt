@@ -6,6 +6,7 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
+import com.example.challengementortapp.ui.AdvancedSearchActivity
 import com.example.challengementortapp.ui.CreateProfileActivity
 import java.util.concurrent.TimeUnit
 
