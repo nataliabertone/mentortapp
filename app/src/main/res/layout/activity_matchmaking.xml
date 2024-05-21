@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Frase "ENCONTRE O SEU MENTOR" -->
+    <TextView
+        android:id="@+id/findMentorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENCONTRE O SEU MENTOR"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <!-- FrameLayout para sobreposição das imagens -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp">
+
+        <!-- Imagem do Mentor -->
+        <ImageView
+            android:id="@+id/mentorImageView"
+            android:layout_width="205dp"
+            android:layout_height="217dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mentor1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/image_border"
+            android:padding="4dp" />
+
+        <!-- Imagem do Aprendiz -->
+        <ImageView
+            android:id="@+id/aprendizImageView"
+            android:layout_width="206dp"
+            android:layout_height="217dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/aprendiz1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/image_border"
+            android:padding="4dp"
+            android:layout_below="@id/mentorImageView" />
+
+        <!-- Imagem do Ícone sobreposta -->
+        <ImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="64dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon11"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="180dp" />
+    </FrameLayout>
+
+    <!-- Frase "É um match!" -->
+    <TextView
+        android:id="@+id/matchTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="É UM MATCH!"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Botão "Mande uma mensagem" -->
+    <Button
+        android:id="@+id/messageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mande uma mensagem"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp" />
+
+    <!-- Botão "Continue procurando" -->
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue procurando"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background_dark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp" />
+
+    <!-- Lista de Matches -->
+    <ListView
+        android:id="@+id/matchListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
+

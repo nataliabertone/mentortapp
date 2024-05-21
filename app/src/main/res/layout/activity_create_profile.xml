@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:background="@color/backgroundColor">
+
+    <TextView
+            android:id="@+id/logoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MentorTApp"
+            android:textSize="32sp"
+            android:textColor="@color/primaryColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:contentDescription="@string/logo_text_description"/>
+
+    <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="154dp"
+            android:src="@drawable/logo1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/logo1_description"/>
+
+    <EditText
+            android:id="@+id/name"
+            style="@style/EditTextStyle"
+            android:hint="Nome" />
+
+    <EditText
+            android:id="@+id/experience"
+            style="@style/EditTextStyle"
+            android:hint="Experiência" />
+
+    <EditText
+            android:id="@+id/skills"
+            style="@style/EditTextStyle"
+            android:hint="Habilidades (separadas por vírgula)" />
+
+    <EditText
+            android:id="@+id/interests"
+            style="@style/EditTextStyle"
+            android:hint="Interesses (separados por vírgula)" />
+
+    <EditText
+            android:id="@+id/education"
+            style="@style/EditTextStyle"
+            android:hint="Formação" />
+
+    <Spinner
+            android:id="@+id/role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:entries="@array/roles" />
+
+    <Button
+            android:id="@+id/saveProfile"
+            style="@style/ButtonStyle"
+            android:text="Salvar Perfil" />
+</LinearLayout>

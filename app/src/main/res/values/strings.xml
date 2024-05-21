@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MentorTApp</string>
+    <string name="logo1_description">Logo de criação de perfil</string>
+    <string name="mentortapp_logo">Logo inicial</string>
+    <string name="logo_text_description">Nome do aplicativo</string>
+    <string-array name="roles">
+        <item>Mentor</item>
+        <item>Aprendiz</item>
+    </string-array>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <!-- Título da tela -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#6200EE"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Campo de entrada para o nome -->
+    <EditText
+        android:id="@+id/name"
+        style="@style/EditTextStyle"
+        android:hint="Informe nome completo" />
+
+    <!-- Campo de entrada para o apelido -->
+    <EditText
+        android:id="@+id/nicknameEditText"
+        style="@style/EditTextStyle"
+        android:hint="Informe apelido (opcional)" />
+
+    <!-- Campo de entrada para o CPF -->
+    <EditText
+        android:id="@+id/cpfEditText"
+        style="@style/EditTextStyle"
+        android:hint="Informe seu CPF" />
+
+    <!-- Campo de entrada para o e-mail -->
+    <EditText
+        android:id="@+id/emailEditText"
+        style="@style/EditTextStyle"
+        android:hint="Informe seu e-mail"
+        android:inputType="textEmailAddress"/>
+
+    <!-- Campo de entrada para a senha -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        style="@style/EditTextStyle"
+        android:hint="Crie uma senha"
+        android:inputType="textPassword" />
+
+    <!-- Campo de entrada para confirmar senha -->
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        style="@style/EditTextStyle"
+        android:hint="Confirme sua senha"
+        android:inputType="textPassword"/>
+
+    <!-- Botão de cadastro -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background_dark"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+
